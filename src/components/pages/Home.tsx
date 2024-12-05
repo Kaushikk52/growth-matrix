@@ -28,7 +28,7 @@ export default function Home() {
                 </h1>
                 <AnimatedWords />
               </div>
-              <button className=" bg-purple-700 rounded-2xl p-4 group flex items-center space-x-2 text-white mix-blend-difference font-semibold">
+              <button className=" bg-purple-700 p-2 rounded-lg group flex items-center space-x-2 text-white mix-blend-difference font-semibold">
                 <span>REACH OUT</span>
                 <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>
@@ -72,7 +72,7 @@ export default function Home() {
             <ServiceCard
               title="WEB & MOBILE DESIGN"
               description="Creating intuitive and engaging digital experiences"
-              className="bg-purple-400 text-black"
+              className="bg-purple-300 text-black"
             />
             <ServiceCard
               title="UX/UI DESIGN"
@@ -134,7 +134,7 @@ export default function Home() {
         </div> 
       */}
 
-      <section className="py-20 bg-[url(/blade-1.png)] bg-bottom-center">
+      <section className="py-20 bg-[url(/blade-1.png)] bg-bottom">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
