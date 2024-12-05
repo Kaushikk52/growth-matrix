@@ -127,8 +127,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
-      <section className="py-20 bg-[url(/blade-1.png)] bg-bottom">
+
+      <section className="py-20 bg-[url(/blade-1-opacity85.png)] bg-bottom">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
