@@ -1,107 +1,155 @@
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import { ServiceCard } from "../ServiceCard";
+import { AnimatedWords } from "../AnimatedWords";
 export default function Home() {
-  
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-600 to-purple-700">
-    {/* Hero Section */}
-    <div className="container mx-auto px-4 pt-20 pb-32">
-      <div className="flex flex-col lg:flex-row items-center">
-        <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
-          <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-            Influencer Marketing:
-            <br />
-            <span className="text-3xl lg:text-5xl opacity-90">
-              The New Word of Mouth.
-            </span>
-          </h1>
-          <p className="text-lg text-purple-100 mb-8">
-            GrowthMatrix has helped launch and scale some of the most ambitious and fast growing products.
-            Your product is the next one.
-          </p>
-          <a
-            href="/contact"
-            className="inline-block py-3 px-8 bg-white hover:bg-purple-100 text-purple-600 font-bold rounded-lg transition duration-200"
+    <>
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      <div className="absolute inset-0 bg-[url(/glitch-bg.png)] bg-no-repeat bg-cover opacity-50 mix-blend-overlay" />
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
           >
-            Contact Us
-          </a>
-        </div>
-        <div className="lg:w-1/2">
-          <img
-            src="/placeholder.svg"
-            alt="Marketing Illustration"
-            className="w-full max-w-lg mx-auto"
-          />
+            <h1 className="grid gap-3">
+              <p className="text-2xl">LIMITLESS</p>
+              
+              {/* <br /> */}
+              <p className="text-2xl">DESIGN</p>
+              {/* <br /> */}
+              <p className="text-2xl">SOLUTIONS</p>
+            </h1>
+            <div className="flex flex-col space-y-4 mb-8">
+              <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-8 mix-blend-difference">WE HELP BRANDS</h1>
+              <AnimatedWords />
+            </div>
+            <button className=" bg-purple-700 rounded-2xl p-4 group flex items-center space-x-2 text-white mix-blend-difference font-semibold">
+              <span>REACH OUT</span>
+              <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </button>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </section>
 
-    {/* Features Section */}
-    <div className="bg-white py-20">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">
-          Why Choose GrowthMatrix?
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            {
-              title: "Strategic Planning",
-              description: "Develop comprehensive marketing strategies tailored to your goals"
-            },
-            {
-              title: "Influencer Network",
-              description: "Access to a curated network of influential content creators"
-            },
-            {
-              title: "Data-Driven Results",
-              description: "Make informed decisions with detailed analytics and reporting"
-            },
-            {
-              title: "Brand Growth",
-              description: "Scale your brand presence across multiple platforms"
-            },
-            {
-              title: "ROI Focused",
-              description: "Maximize your return on investment with optimized campaigns"
-            },
-            {
-              title: "24/7 Support",
-              description: "Dedicated support team to assist you every step of the way"
-            }
-          ].map((feature, index) => (
-            <div
+            { number: "300", label: "SUCCESS PROJECT" },
+            { number: "200", label: "PRODUCT LAUNCHES" },
+            { number: "100", label: "STARTUP RAISED" },
+          ].map((stat, index) => (
+            <motion.div
               key={index}
-              className="bg-purple-50 rounded-lg p-6 hover:shadow-lg transition duration-200"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              className="text-center"
             >
-              <h3 className="text-xl font-bold text-purple-600 mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600">
-                {feature.description}
-              </p>
-            </div>
+              <span className="text-5xl font-bold">+{stat.number}</span>
+              <p className="text-sm text-gray-600 mt-2">{stat.label}</p>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
 
-    {/* CTA Section */}
-    <div className="bg-purple-800 py-20">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-          Ready to Grow Your Brand?
-        </h2>
-        <p className="text-lg text-purple-200 mb-8 max-w-2xl mx-auto">
-          Join the growing list of brands that have transformed their digital presence with GrowthMatrix.
-        </p>
-        <a
-          href="/contact"
-          className="inline-block py-3 px-8 bg-white hover:bg-purple-100 text-purple-600 font-bold rounded-lg transition duration-200"
-        >
-          Get Started Today
-        </a>
+    <section className="py-20">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-12">EXPLORE OUR SERVICES</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ServiceCard
+            title="BRAND IDENTITY CREATION"
+            description="Crafting unique and memorable brand identities"
+            className="bg-gray-50"
+          />
+          <ServiceCard
+            title="WEB & MOBILE DESIGN"
+            description="Creating intuitive and engaging digital experiences"
+            className="bg-purple-600 text-white"
+          />
+          <ServiceCard
+            title="UX/UI DESIGN"
+            description="Designing intuitive and user-friendly interfaces"
+            className="bg-gray-50"
+          />
+          <ServiceCard
+            title="DIGITAL MARKETING"
+            description="Driving growth through strategic digital initiatives"
+            className="bg-black text-white"
+          />
+        </div>
       </div>
-    </div>
+    </section>
 
-   
-  </div>
-  )
+    <section className="py-20 bg-black text-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-16">OUR EXCELLENT APPROACH</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {[
+            {
+              title: "DEEP DISCOVERY",
+              description:
+                "We begin by immersing ourselves in your brand through thorough research and analysis.",
+              icon: "🔍",
+            },
+            {
+              title: "CREATIVE IDEATION",
+              description:
+                "Our talented team develops innovative and strategic solutions for your unique needs.",
+              icon: "💡",
+            },
+            {
+              title: "TAILORED DESIGN",
+              description:
+                "We craft bespoke designs that reflect the unique identity of your brand.",
+              icon: "✨",
+            },
+          ].map((approach, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              className="text-center"
+            >
+              <div className="text-4xl mb-6">{approach.icon}</div>
+              <h3 className="text-xl font-bold mb-4">{approach.title}</h3>
+              <p className="text-gray-400">{approach.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="py-20">
+      <div className="container mx-auto px-4 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-6xl md:text-8xl font-bold mb-8">
+            REACH OUT
+            <br />
+            NOW
+          </h2>
+          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+            LET'S COLLABORATE AND CREATE SOMETHING EXTRAORDINARY. CONTACT US
+            TODAY TO DISCUSS YOUR VISION AND DISCOVER SOLUTIONS TAILORED TO
+            YOUR NEEDS.
+          </p>
+          <button className="group inline-flex items-center space-x-2 text-purple-600 font-semibold">
+            <span>GET IN TOUCH</span>
+            <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+          </button>
+        </motion.div>
+      </div>
+    </section>
+  </>
+  );
 }
