@@ -142,16 +142,14 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-6xl md:text-8xl font-bold mb-8">
-              REACH OUT
-              <br />
-              NOW
+              REACH OUT NOW
             </h2>
-            <p className="text-black mb-8 max-w-2xl mx-auto">
+            <p className="text-black mb-8 max-w-2xl mx-auto font-medium text-lg">
               LET'S COLLABORATE AND CREATE SOMETHING EXTRAORDINARY. CONTACT US
               TODAY TO DISCUSS YOUR VISION AND DISCOVER SOLUTIONS TAILORED TO
               YOUR NEEDS.
             </p>
-            <button className="group inline-flex items-center space-x-2 text-white font-semibold">
+            <button className="group inline-flex items-center space-x-2 text-white font-semibold bg-black p-2 rounded-lg">
               <span>GET IN TOUCH</span>
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
