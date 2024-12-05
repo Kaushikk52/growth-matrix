@@ -127,13 +127,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/*
-        <div className="absolute bottom-[20px] right-[-36px] top-[0.5rem] w-[26rem] h-[55rem] translate-x-12 translate-y-12">
-          <div className="absolute inset-0 bg-[url(/blade-1.png)] bg-no-repeat bg-contain bg-bottom-right opacity-50" />
-        </div> 
-      */}
-
+      
       <section className="py-20 bg-[url(/blade-1.png)] bg-bottom">
         <div className="container mx-auto px-4 text-center">
           <motion.div
