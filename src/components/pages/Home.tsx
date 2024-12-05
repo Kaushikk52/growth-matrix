@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { ServiceCard } from "../ServiceCard";
 import { AnimatedWords } from "../AnimatedWords";
+import { LogoMarquee } from "../LogosMarquee";
 export default function Home() {
   return (
     <>
@@ -39,6 +40,15 @@ export default function Home() {
 
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+            We are behind some of the most fast-growing products.
+          </h2>
+          <LogoMarquee />
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { number: "300", label: "SUCCESS PROJECT" },
@@ -59,6 +69,46 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="space-y-6"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+               
+               How Our Influencer Marketing Company
+                <br />
+                Helps Brands?
+              </h2>
+              
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="space-y-6"
+            >
+              <p className="text-gray-600 text-lg">
+              Leveraging the talents of professional social media influencers and content creators, our influencer marketing experts collaborate with visionary strategists to develop imaginative, distinctive content that boasts exceptional shareability and engagement.Opt for the best influencer marketing services to elevate your brand's presence!
+              </p>  
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-6 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors flex items-center space-x-2"
+              >
+                <span>About us</span>
+                <ArrowUpRight className="w-5 h-5" />
+              </motion.button>
+            </motion.div>
+          </div>
+        </div>
+        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-l to-purple-100 from-transparent" />
+        </section>
 
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -90,25 +140,25 @@ export default function Home() {
 
       <section className="py-20 bg-black text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-16">OUR EXCELLENT APPROACH</h2>
+          <h2 className="text-4xl font-bold mb-16">WHAT MATTERS THE MOST</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
-                title: "DEEP DISCOVERY",
+                title: "Audience",
                 description:
-                  "We begin by immersing ourselves in your brand through thorough research and analysis.",
+                  "What audience are we targeting? How do we find and attract those target customers accurately, efficiently, and cost-effectively?",
                 icon: "🔍",
               },
               {
-                title: "CREATIVE IDEATION",
+                title: "Message",
                 description:
-                  "Our talented team develops innovative and strategic solutions for your unique needs.",
+                  "What messages are we sharing? Does this align with your brand and can effectively capture audiences attention & gain trust?",
                 icon: "💡",
               },
               {
-                title: "TAILORED DESIGN",
+                title: "Trust",
                 description:
-                  "We craft bespoke designs that reflect the unique identity of your brand.",
+                  "What channels do we utilize and how can we borrow trust from the right influencers? How do we choose a right mix of influencers?",
                 icon: "✨",
               },
             ].map((approach, index) => (

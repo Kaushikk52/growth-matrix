@@ -3,3 +3,30 @@
 @tailwind utilities;
 
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  gap: 2rem; /* Adds spacing between logos */
+  animation: marquee 20s linear infinite;
+  will-change: transform; /* Optimizes performance */
+}
+
+.logo-marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logo-marquee-container:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+
