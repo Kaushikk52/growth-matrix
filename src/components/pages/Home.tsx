@@ -117,21 +117,25 @@ export default function Home() {
               title="BRAND IDENTITY CREATION"
               description="Crafting unique and memorable brand identities"
               className="bg-gray-50"
+              img="/future-blob1.png"
             />
             <ServiceCard
               title="WEB & MOBILE DESIGN"
               description="Creating intuitive and engaging digital experiences"
               className="bg-purple-300 text-black"
+              img="/future-blob2.png"
             />
             <ServiceCard
               title="UX/UI DESIGN"
               description="Designing intuitive and user-friendly interfaces"
               className="bg-gray-50"
+              img="/future-blob3.png"
             />
             <ServiceCard
               title="DIGITAL MARKETING"
               description="Driving growth through strategic digital initiatives"
               className="bg-black text-white"
+              img="/future-blob4.png"
             />
           </div>
         </div>
