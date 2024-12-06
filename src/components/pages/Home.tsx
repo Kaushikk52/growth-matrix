@@ -209,8 +209,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-5">
+        <div className="container mx-auto ">
           <Accordion />
         </div>
       </section>

@@ -68,15 +68,12 @@ export const Accordion = () => {
     <div className="bg-gradient-to-br from-purple-50 to-white p-8 md:p-12 rounded-2xl">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-2">
           Frequently asked questions
           </h2>
-          <p className="text-gray-600 max-w-2xl">
-          Your questions, answered for you.
-          </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-2">
           {services.map((service) => (
             <div key={service.id} className="border-b border-black">
               <button
