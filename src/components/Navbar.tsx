@@ -46,9 +46,9 @@ export default function Navbar() {
           <NavLink href="/services">Services</NavLink>
           <NavLink href="/contact">Contact Us</NavLink>
         </nav>
-        <button className="w-8 h-8 flex items-center justify-center rounded-full bg-black text-white">
-          <ArrowUpRight className="w-4 h-4" />
-          <span className="sr-only">Get Quote</span>
+        <button className="px-4 py-2 flex items-center justify-center rounded-full bg-black text-white group">
+        <span>Get Quote</span>
+        <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
         </button>
       </div>
 

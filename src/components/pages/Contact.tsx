@@ -1,4 +1,4 @@
-import { Mail, MapPin, MessageSquare, Phone, Twitter } from "lucide-react";
+import { Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 import { useState } from "react";
 import {
   Select,
@@ -89,8 +89,8 @@ export default function Contact() {
             </p>
             <div className="flex items-center gap-2 text-purple-600">
               <Phone className="w-4 h-4" />
-              <a href="tel:+1(555)000-0000" className="hover:underline">
-                +1(555) 000-0000
+              <a href="tel:+91 9004302155" className="hover:underline">
+              +91 9004302155
               </a>
             </div>
           </div>
@@ -102,15 +102,17 @@ export default function Contact() {
               Speak to our friendly team via live chat.
             </p>
             <div className="space-y-3">
-              <Button className="w-full justify-start">
-                <MessageSquare className="w-4 h-4 mr-2" />
-                Start a live chat
+              <Button className="w-7/12 justify-start">
+                <Linkedin className="w-4 h-4 mr-2" />
+                Connect on Linkedin
               </Button>
-              <Button className="w-full justify-start">
+              <br />
+              <Button className="w-7/12 justify-start">
                 <Mail className="w-4 h-4 mr-2" />
                 Shoot us an email
               </Button>
-              <Button className="w-full justify-start">
+              <br />
+              <Button className="w-7/12 justify-start">
                 <Twitter className="w-4 h-4 mr-2" />
                 Message us on Twitter
               </Button>
@@ -121,17 +123,17 @@ export default function Contact() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Visit us</h3>
             <p className="text-gray-600 mb-2">
-              Chat to us in person at our Melbourne HQ.
+              Chat to us in person
             </p>
             <div className="flex items-start gap-2 text-purple-600">
               <MapPin className="w-4 h-4 mt-1" />
               <a
-                href="https://maps.google.com"
+                href="https://maps.app.goo.gl/x2miRLr8rQtEMrzQA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                100 Smith Street, Collingwood VIC 3066
+                Mulgoan Dongri, Andheri East, Mumbai 400093
               </a>
             </div>
           </div>

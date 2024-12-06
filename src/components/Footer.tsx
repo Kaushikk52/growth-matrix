@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram } from "lucide-react";
+import { Twitter, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -100,24 +100,17 @@ export default function Footer() {
           <div className="flex space-x-4">
             <a
               href="#"
-              className="text-white hover:text-blue-400 transition-colors duration-200"
+              className="text-white hover:text-purple-400 transition-colors duration-200"
             >
-              <Facebook className="h-6 w-6" />
-              <span className="sr-only">Facebook</span>
+              <Linkedin className="h-6 w-6" />
+              <span className="sr-only">Linkedin</span>
             </a>
             <a
               href="#"
-              className="text-white hover:text-blue-400 transition-colors duration-200"
+              className="text-white hover:text-purple-400 transition-colors duration-200"
             >
               <Twitter className="h-6 w-6" />
               <span className="sr-only">Twitter</span>
-            </a>
-            <a
-              href="#"
-              className="text-white hover:text-blue-400 transition-colors duration-200"
-            >
-              <Instagram className="h-6 w-6" />
-              <span className="sr-only">Instagram</span>
             </a>
           </div>
         </div>
