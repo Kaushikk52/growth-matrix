@@ -3,9 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from 'swiper/modules'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import type { Swiper as SwiperType } from 'swiper'
-
-// Import Swiper styles
-import 'swiper/css'
+import 'swiper/swiper-bundle.css';
 
 interface Testimonial {
   id: number
