@@ -13,8 +13,8 @@ export const Stats = () => {
   ]
 
   return (
-    <div className="absolute top-2 right-4 md:right-8">
-      <div className="flex flex-wrap justify-end gap-8 md:gap-12">
+    <div className="absolute top-2 right-2 md:right-8">
+      <div className="flex flex-wrap justify-end gap-2 md:gap-8">
         {stats.map((stat, index) => (
           <motion.div
             key={index}
