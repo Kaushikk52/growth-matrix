@@ -42,9 +42,9 @@ export default function Navbar() {
         </a>
         <nav className="hidden md:flex space-x-8">
           <NavLink href="/">Home</NavLink>
-          <NavLink href="/">About</NavLink>
-          <NavLink href="/">Services</NavLink>
-          <NavLink href="/">Contact Us</NavLink>
+          <NavLink href="/about">About</NavLink>
+          <NavLink href="/services">Services</NavLink>
+          <NavLink href="/contact">Contact Us</NavLink>
         </nav>
         <button className="w-8 h-8 flex items-center justify-center rounded-full bg-black text-white">
           <ArrowUpRight className="w-4 h-4" />
@@ -86,21 +86,21 @@ export default function Navbar() {
               </Link>
               <div className="mt-0"></div>
               <Link
-                to="/listings/properties/rent"
+                to="/about"
                 className="block py-2 text-lg font-semibold text-gray-800 hover:text-gray-600"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
-                to="/listings/properties/buy"
+                to="/services"
                 className="block py-2 text-lg font-semibold text-gray-800 hover:text-gray-600"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
-                to="/listings/properties/buy"
+                to="/contact"
                 className="block py-2 text-lg font-semibold text-gray-800 hover:text-gray-600"
                 onClick={() => setIsMenuOpen(false)}
               >
