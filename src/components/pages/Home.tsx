@@ -4,10 +4,11 @@ import { ServiceCard } from "../ServiceCard";
 import { AnimatedWords } from "../AnimatedWords";
 import { LogoMarquee } from "../LogosMarquee";
 import { Stats } from "../Stats";
+import { TestimonialCarousel } from "../TestimonialsCarousel";
 export default function Home() {
   return (
     <>
- <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-[url(/glitch-bg.png)] bg-no-repeat bg-cover opacity-50 mix-blend-overlay" />
         <div className="container mx-auto px-4 relative z-10">
           <Stats />
@@ -67,7 +68,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section> */}  
+      </section> */}
 
       <section className="py-20 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
@@ -79,12 +80,10 @@ export default function Home() {
               className="space-y-6"
             >
               <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-               
-               How Our Influencer Marketing Company
+                How Our Influencer Marketing Company
                 <br />
                 Helps Brands?
               </h2>
-              
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -93,8 +92,13 @@ export default function Home() {
               className="space-y-6"
             >
               <p className="text-gray-600 text-lg">
-              Leveraging the talents of professional social media influencers and content creators, our influencer marketing experts collaborate with visionary strategists to develop imaginative, distinctive content that boasts exceptional shareability and engagement.Opt for the best influencer marketing services to elevate your brand's presence!
-              </p>  
+                Leveraging the talents of professional social media influencers
+                and content creators, our influencer marketing experts
+                collaborate with visionary strategists to develop imaginative,
+                distinctive content that boasts exceptional shareability and
+                engagement.Opt for the best influencer marketing services to
+                elevate your brand's presence!
+              </p>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -107,35 +111,35 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-l to-purple-100 from-transparent" />
-        </section>
+      </section>
 
       <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-12">EXPLORE OUR SERVICES</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ServiceCard
-              title="BRAND IDENTITY CREATION"
-              description="Crafting unique and memorable brand identities"
+              title="YouTube Influencer Marketing"
+              description="Integrated & Dedicated Videos, YouTube Shorts with 5,000+ KOLs"
               className="bg-gray-50"
-              img="/future-blob1.png"
+              // img="future-blob1"
             />
             <ServiceCard
-              title="WEB & MOBILE DESIGN"
-              description="Creating intuitive and engaging digital experiences"
+              title="LinkedIn Influencer Marketing"
+              description="150+ micro, nano, mega influencers across 10+ content genres"
               className="bg-purple-300 text-black"
-              img="/future-blob2.png"
+              // img="future-blob2"
             />
             <ServiceCard
-              title="UX/UI DESIGN"
-              description="Designing intuitive and user-friendly interfaces"
+              title="Twitter Influencer Marketing"
+              description="Top Tech and AI Influencers to promote your brand, product, or service"
               className="bg-gray-50"
-              img="/future-blob3.png"
+              // img="future-blob3"
             />
             <ServiceCard
-              title="DIGITAL MARKETING"
-              description="Driving growth through strategic digital initiatives"
+              title="NewsLetter Marketing"
+              description="Access to your audience’s inbox, allowing you to share engaging content & drive traffic to your website"
               className="bg-black text-white"
-              img="/future-blob4.png"
+              // img="future-blob4"
             />
           </div>
         </div>
@@ -201,6 +205,13 @@ export default function Home() {
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
           </motion.div>
+        </div>
+      </section>
+
+      <section className="py-5">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold mb-5 text-center">Testimonials</h2>
+          <TestimonialCarousel />
         </div>
       </section>
     </>

@@ -5,10 +5,10 @@ interface ServiceCardProps {
   title: string
   description: string
   className?: string
-  img:string
+  img?:string
 }
 
-export const ServiceCard = ({ title, description, className = '',img }: ServiceCardProps) => {
+export const ServiceCard = ({ title, description, className = '' }: ServiceCardProps) => {
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
@@ -17,7 +17,7 @@ export const ServiceCard = ({ title, description, className = '',img }: ServiceC
       <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-purple-600/30 opacity-0 group-hover:opacity-100 transition-opacity" />
       <div className="absolute bottom-0 right-0 w-48 h-48 translate-x-8 translate-y-8">
       <div className="absolute bottom-[20px] right-[-36px] top-[0.5rem] w-[26rem] h-[55rem] translate-x-12 translate-y-12">
-      <div className={`absolute inset-0 bg-[url("${img}")] bg-no-repeat bg-contain bg-bottom-right opacity-50`}/>
+      <div className={`absolute inset-0 bg-[url('/future-blob2.png')] bg-no-repeat bg-contain bg-bottom-right opacity-50`}/>
       </div>
         {/* <div 
           className="absolute inset-0 backdrop-blur-sm rounded-full"
