@@ -3,33 +3,32 @@ import { ArrowUpRight } from "lucide-react";
 import { ServiceCard } from "../ServiceCard";
 import { AnimatedWords } from "../AnimatedWords";
 import { LogoMarquee } from "../LogosMarquee";
+import { Stats } from "../Stats";
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+ <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-[url(/glitch-bg.png)] bg-no-repeat bg-cover opacity-50 mix-blend-overlay" />
         <div className="container mx-auto px-4 relative z-10">
+          <Stats />
           <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="grid gap-3">
-                <p className="text-2xl">LIMITLESS</p>
-
-                {/* <br /> */}
-                <p className="text-2xl">DESIGN</p>
-                {/* <br /> */}
-                <p className="text-2xl">SOLUTIONS</p>
+              <h1 className="grid gap-3 text-2xl mb-4">
+                <span>LIMITLESS</span>
+                <span>DESIGN</span>
+                <span>SOLUTIONS</span>
               </h1>
               <div className="flex flex-col space-y-4 mb-8">
-                <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-8 mix-blend-difference">
+                <h2 className="text-6xl md:text-8xl font-bold leading-tight mb-4 mix-blend-difference">
                   WE HELP BRANDS
-                </h1>
+                </h2>
                 <AnimatedWords />
               </div>
-              <button className=" bg-purple-700 p-2 rounded-lg group flex items-center space-x-2 text-white mix-blend-difference font-semibold">
+              <button className="bg-purple-700 px-4 py-2 rounded-lg group flex items-center space-x-2 text-white mix-blend-difference font-semibold">
                 <span>REACH OUT</span>
                 <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>
@@ -47,7 +46,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -68,7 +67,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}  
 
       <section className="py-20 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
