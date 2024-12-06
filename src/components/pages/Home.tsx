@@ -5,6 +5,7 @@ import { AnimatedWords } from "../AnimatedWords";
 import { LogoMarquee } from "../LogosMarquee";
 import { Stats } from "../Stats";
 import { TestimonialCarousel } from "../TestimonialsCarousel";
+import { Accordion } from "../Accordion";
 export default function Home() {
   return (
     <>
@@ -147,7 +148,7 @@ export default function Home() {
 
       <section className="py-20 bg-black text-white">
         <div className="container mx-auto px-4  ">
-          <h2 className="text-4xl font-bold mb-16 inset-0 bg-[url(/glitch-bg.png)] bg-no-repeat bg-cover text-transparent bg-clip-text">WHAT MATTERS THE MOST</h2>
+          <h2 className="text-4xl font-bold mb-16 inset-0 bg-[url(/glitch-bg.png)] bg-no-repeat text-transparent bg-clip-text">WHAT MATTERS THE MOST</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
@@ -205,6 +206,12 @@ export default function Home() {
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
           </motion.div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <Accordion />
         </div>
       </section>
 

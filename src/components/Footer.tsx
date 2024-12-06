@@ -1,45 +1,127 @@
+import { Facebook, Twitter, Instagram } from "lucide-react";
+
 export default function Footer() {
   return (
-     <footer className="bg-purple-900 text-white py-12">
-     <div className="container mx-auto px-4">
-       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-         <div>
-           <h3 className="text-xl font-bold mb-4">GrowthMatrix</h3>
-           <p className="text-purple-200">
-             Your partner in digital growth and influencer marketing success.
-           </p>
-         </div>
-         <div>
-           <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-           <ul className="space-y-2">
-             <li><a href="/" className="text-purple-200 hover:text-white">Home</a></li>
-             <li><a href="/about" className="text-purple-200 hover:text-white">About</a></li>
-             <li><a href="/services" className="text-purple-200 hover:text-white">Services</a></li>
-             <li><a href="/contact" className="text-purple-200 hover:text-white">Contact</a></li>
-           </ul>
-         </div>
-         <div>
-           <h4 className="text-lg font-semibold mb-4">Services</h4>
-           <ul className="space-y-2">
-             <li><a href="/services" className="text-purple-200 hover:text-white">Influencer Marketing</a></li>
-             <li><a href="/services" className="text-purple-200 hover:text-white">Content Strategy</a></li>
-             <li><a href="/services" className="text-purple-200 hover:text-white">Brand Growth</a></li>
-             <li><a href="/services" className="text-purple-200 hover:text-white">Analytics</a></li>
-           </ul>
-         </div>
-         <div>
-           <h4 className="text-lg font-semibold mb-4">Contact</h4>
-           <ul className="space-y-2">
-             <li className="text-purple-200">Email: info@growthmatrix.agency</li>
-             <li className="text-purple-200">Phone: (555) 123-4567</li>
-             <li className="text-purple-200">Location: Your Location</li>
-           </ul>
-         </div>
-       </div>
-       <div className="border-t border-purple-800 mt-8 pt-8 text-center text-purple-200">
-         <p>&copy; {new Date().getFullYear()} GrowthMatrix. All rights reserved.</p>
-       </div>
-     </div>
-   </footer>
-  )
+    <footer className="bg-purple-900 text-white py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h3 className="text-xl font-bold mb-4">GrowthMatrix</h3>
+            <p className="text-purple-200">
+              GrowthMatrix is a growth marketing agency that specialize in
+              delivering iterative and data-driven growth operations for
+              fast-growing companies.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/" className="text-purple-200 hover:text-white">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="text-purple-200 hover:text-white">
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-purple-200 hover:text-white"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-purple-200 hover:text-white">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="/services"
+                  className="text-purple-200 hover:text-white"
+                >
+                  Influencer Marketing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-purple-200 hover:text-white"
+                >
+                  Content Strategy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-purple-200 hover:text-white"
+                >
+                  Brand Growth
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-purple-200 hover:text-white"
+                >
+                  Analytics
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2">
+              <li className="text-purple-200">
+                Email: aakash@growthmatrix.agency
+              </li>
+              <li className="text-purple-200">Call: +91 9004302155</li>
+              <li className="text-purple-200">
+                Location: Mulgoan Dongri, Andheri East, Mumbai 400093
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-purple-800 flex flex-col md:flex-row justify-between items-center">
+          <div className="text-center text-purple-200">
+            <p>&copy; 2024 All Rights Reserved By GrowthMatrix</p>
+          </div>
+
+          <div className="flex space-x-4">
+            <a
+              href="#"
+              className="text-white hover:text-blue-400 transition-colors duration-200"
+            >
+              <Facebook className="h-6 w-6" />
+              <span className="sr-only">Facebook</span>
+            </a>
+            <a
+              href="#"
+              className="text-white hover:text-blue-400 transition-colors duration-200"
+            >
+              <Twitter className="h-6 w-6" />
+              <span className="sr-only">Twitter</span>
+            </a>
+            <a
+              href="#"
+              className="text-white hover:text-blue-400 transition-colors duration-200"
+            >
+              <Instagram className="h-6 w-6" />
+              <span className="sr-only">Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }
