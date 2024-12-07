@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { ServiceCard } from "../ServiceCard";
 // import { AnimatedWords } from "../AnimatedWords";
-import { LogoMarquee } from "../LogosMarquee";
+// import { LogoMarquee } from "../LogosMarquee";
 // import { Stats } from "../Stats";
 import { TestimonialCarousel } from "../TestimonialsCarousel";
 import { Accordion } from "../Accordion";

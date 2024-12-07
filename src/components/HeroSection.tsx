@@ -2,21 +2,21 @@ import { motion } from 'framer-motion'
 import { LogoMarquee } from './LogosMarquee'
 
 export const HeroSection = () => {
-  const companies = [
-    [
-      { name: 'Shakker', logo: '/logos/shakker.svg' },
-      { name: 'Notta', logo: '/logos/notta.svg' },
-      { name: 'Vivago AI', logo: '/logos/vivago.svg' },
-      { name: 'Dacdora', logo: '/logos/dacdora.svg' },
-      { name: 'Beta University', logo: '/logos/beta.svg' },
-    ],
-    [
-      { name: 'Affine AI', logo: '/logos/affine.svg' },
-      { name: 'AdsGency', logo: '/logos/adsgency.svg' },
-      { name: 'ZP', logo: '/logos/zp.svg' },
-      { name: 'Quick Creator', logo: '/logos/quick-creator.svg' },
-    ]
-  ]
+  // const companies = [
+  //   [
+  //     { name: 'Shakker', logo: '/logos/shakker.svg' },
+  //     { name: 'Notta', logo: '/logos/notta.svg' },
+  //     { name: 'Vivago AI', logo: '/logos/vivago.svg' },
+  //     { name: 'Dacdora', logo: '/logos/dacdora.svg' },
+  //     { name: 'Beta University', logo: '/logos/beta.svg' },
+  //   ],
+  //   [
+  //     { name: 'Affine AI', logo: '/logos/affine.svg' },
+  //     { name: 'AdsGency', logo: '/logos/adsgency.svg' },
+  //     { name: 'ZP', logo: '/logos/zp.svg' },
+  //     { name: 'Quick Creator', logo: '/logos/quick-creator.svg' },
+  //   ]
+  // ]
 
   return (
     <section className="py-20 relative overflow-hidden">
