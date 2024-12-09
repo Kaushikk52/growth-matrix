@@ -46,7 +46,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-20 text-center"
         >
-          <p className="text-base text-gray-500 tracking-wider mb-12">
+          <p className="text-lg text-gray-500 tracking-wider mb-12">
             We are behind some of the most fast-growing brands.
           </p>
 
