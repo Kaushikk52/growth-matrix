@@ -215,7 +215,7 @@ export default function Home() {
             <h2 className="text-6xl md:text-8xl font-bold mb-8">
               REACH OUT NOW
             </h2>
-            <p className="text-black mb-8 max-w-2xl mx-auto font-medium text-lg">
+            <p className="text-slate-300 mb-8 max-w-2xl mx-auto font-bold text-xl bg-black shadow-md p-3">
               LET'S COLLABORATE AND CREATE SOMETHING EXTRAORDINARY. CONTACT US
               TODAY TO DISCUSS YOUR VISION AND DISCOVER SOLUTIONS TAILORED TO
               YOUR NEEDS.
