@@ -50,11 +50,11 @@ export const ResultsSection = () => {
               '/insta-section/views2.jpeg',
               '/insta-section/liked2.jpeg',
             ].map((src, index) => (
-              <div key={index} className="bg-white p-2 rounded-xl shadow-lg">
+              <div key={index} className=" p-2">
                 <img
                   src={src}
                   alt={`Metric ${index + 1}`}
-                  className="w-full h-auto rounded-lg"
+                  className="w-full h-auto rounded-lg shadow-lg"
                 />
               </div>
             ))}
