@@ -1,4 +1,4 @@
-import { Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import { Linkedin, Mail, Twitter } from "lucide-react";
 import { useState } from "react";
 import {
   Select,
