@@ -7,6 +7,7 @@ import { ServiceCard } from "../ServiceCard";
 import { TestimonialCarousel } from "../TestimonialsCarousel";
 import { Accordion } from "../Accordion";
 import { HeroSection } from "../HeroSection";
+import { ResultsSection } from "../ResultsSection";
 export default function Home() {
   return (
     <>
@@ -226,6 +227,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      <ResultsSection />
 
       <section className="py-5">
         <div className="container mx-auto ">
