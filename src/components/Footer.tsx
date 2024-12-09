@@ -1,4 +1,4 @@
-import { Twitter, Linkedin } from "lucide-react";
+import { Twitter, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -81,12 +81,8 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
-              <li className="text-purple-200">
-                Email: aakash@growthmatrix.agency
-              </li>
-              <li className="text-purple-200">Call: +91 9004302155</li>
-              <li className="text-purple-200">
-                Location: Mulgoan Dongri, Andheri East, Mumbai 400093
+              <li className="text-purple-200 flex">
+                <Mail className=" mr-2" /> partnership@growthmartix.agency
               </li>
             </ul>
           </div>
@@ -106,7 +102,7 @@ export default function Footer() {
               <span className="sr-only">Linkedin</span>
             </a>
             <a
-              href="#"
+              href="https://x.com/growthmartixx"
               className="text-white hover:text-purple-400 transition-colors duration-200"
             >
               <Twitter className="h-6 w-6" />

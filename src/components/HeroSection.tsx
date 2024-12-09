@@ -27,7 +27,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-7xl font-bold mb-6">
             We Don't Just Market.
             <br />
             We Influence.
@@ -46,7 +46,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-20 text-center"
         >
-          <p className="text-sm text-gray-500 tracking-wider mb-12">
+          <p className="text-base text-gray-500 tracking-wider mb-12">
             We are behind some of the most fast-growing brands.
           </p>
 
