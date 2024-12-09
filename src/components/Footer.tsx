@@ -95,14 +95,14 @@ export default function Footer() {
 
           <div className="flex space-x-4">
             <a
-              href="#"
+              href="https://www.linkedin.com/company/growthmatrixagency"
               className="text-white hover:text-purple-400 transition-colors duration-200"
             >
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">Linkedin</span>
             </a>
             <a
-              href="https://x.com/growthmartixx"
+              href="https://x.com/growthmatrixx"
               className="text-white hover:text-purple-400 transition-colors duration-200"
             >
               <Twitter className="h-6 w-6" />
