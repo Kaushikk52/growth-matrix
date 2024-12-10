@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Pen, Linkedin, Edit, User, Share2, Video, Globe, MessageCircle } from 'lucide-react'
+import { Pen, Linkedin, Edit, User, Share2, Video, Globe, MessageCircle, Instagram, Twitter } from 'lucide-react'
 
 interface ServiceCardProps {
   icon: React.ReactNode
@@ -16,12 +16,12 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => (
     className="relative bg-[#1C1C1C] rounded-3xl p-8 group"
   >
     {/* Glow effect */}
-    <div className="absolute inset-0 rounded-3xl bg-gradient-to-b from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+    <div className="absolute inset-0 rounded-3xl bg-gradient-to-b from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
     
     {/* Icon */}
     <div className="relative w-12 h-12 mb-6">
-      <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-lg" />
-      <div className="relative flex items-center justify-center w-full h-full rounded-full border border-cyan-500 text-cyan-400">
+      <div className="absolute inset-0 bg-purple-500/20 rounded-full blur-lg" />
+      <div className="relative flex items-center justify-center w-full h-full rounded-full border border-purple-500 text-purple-400">
         {icon}
       </div>
     </div>
@@ -33,9 +33,9 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => (
     </p>
 
     {/* Button */}
-    <button className="flex items-center gap-2 text-cyan-400 text-sm font-medium group/btn">
+    <button className="flex items-center gap-2 text-purple-400 text-sm font-medium group/btn">
       <span>See More</span>
-      <div className="w-12 h-[1px] bg-cyan-400 transform origin-left group-hover/btn:scale-x-150 transition-transform" />
+      <div className="w-12 h-[1px] bg-purple-400 transform origin-left group-hover/btn:scale-x-150 transition-transform" />
     </button>
   </motion.div>
 )
@@ -43,45 +43,45 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => (
 export const ServicesSection = () => {
   const services = [
     {
-      icon: <Pen className="w-6 h-6" />,
-      title: "Designing & Branding",
-      description: "Design can be tough, and time is precious. Let us take some of that weight off your shoulders and help you shine!"
+      icon: <Video className="w-6 h-6" />,
+      title: "YouTube Influencer Campaigns",
+      description: "Engage your audience with high-quality YouTube content. From integrated brand mentions to dedicated videos and YouTube shorts, we connect you with top-tier creators who bring your brand to life."
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
-      title: "LinkedIn Management",
-      description: "Stuck on LinkedIn? We'll help you connect the dots! Our management services will help you bulk up your online presence, grow your network, and become a LinkedIn rockstar!"
+      title: "LinkedIn Infulencer Partnerships",
+      description: "Expand your professional reach with LinkedIn influencers. Our experts collaborate with nano, micro and mega influencers across industries to drive engagement and establish your brand's credibilty."
+    },
+    {
+      icon: <Twitter className="w-6 h-6" />,
+      title: "X Influencer Promotions",
+      description: "Make your brand trend on Twitter with powerful influencer collaborations. From AI and Tech to lifestyle niches, we craft campaigns that resonates with the right audience."
+    },
+    {
+      icon: <Instagram className="w-6 h-6" />,
+      title: "Instagram Influencer Engagements",
+      description: "Create stunning campaigns that captivate your audience on Instagram. From product launches to lifestyle promotions, we help you reach millions with authentic influencer partnerships."
     },
     {
       icon: <Edit className="w-6 h-6" />,
-      title: "LinkedIn Ghostwriting",
-      description: "Need help finding the right words? Our LinkedIn ghostwriting services will help you share your story & build your personal brand with engaging and informative content."
+      title: "Newsletter Marketing with Influencers",
+      description: "Get your brand directly into inboxes with influencer-driven email campaigns. Drive traffic to your website, build trust, and deliver value through engaging newsletters."
     },
-    {
-      icon: <User className="w-6 h-6" />,
-      title: "LinkedIn Profile Optimization",
-      description: "Get noticed on LinkedIn with our profile optimization services! We'll help you create a strong and effective profile that showcases your best self."
-    },
-    {
-      icon: <Share2 className="w-6 h-6" />,
-      title: "Social Media Marketing",
-      description: "Don't let your social media presence fall behind! Our marketing services will help you build a high-performing online presence, grow your audience, and boost your ROI."
-    },
-    {
-      icon: <Video className="w-6 h-6" />,
-      title: "Video Editing",
-      description: "Say goodbye to amateur video edits! Our service delivers polished, professional results that will impress your audience."
-    },
-    {
-      icon: <Globe className="w-6 h-6" />,
-      title: "Web Design & Development",
-      description: "Want a website that drives real results? Our web designing & development service converts visitors into clients with high-performing solutions."
-    },
-    {
-      icon: <MessageCircle className="w-6 h-6" />,
-      title: "Consultation with Mahnoor",
-      description: "Need clarity? Book a call and get personalized advice to tackle your challenges and reach your goals."
-    }
+    // {
+    //   icon: <Video className="w-6 h-6" />,
+    //   title: "Video Editing",
+    //   description: "Say goodbye to amateur video edits! Our service delivers polished, professional results that will impress your audience."
+    // },
+    // {
+    //   icon: <Globe className="w-6 h-6" />,
+    //   title: "Web Design & Development",
+    //   description: "Want a website that drives real results? Our web designing & development service converts visitors into clients with high-performing solutions."
+    // },
+    // {
+    //   icon: <MessageCircle className="w-6 h-6" />,
+    //   title: "Consultation with Mahnoor",
+    //   description: "Need clarity? Book a call and get personalized advice to tackle your challenges and reach your goals."
+    // }
   ]
 
   return (
@@ -101,7 +101,7 @@ export const ServicesSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl md:text-5xl font-bold text-cyan-400 mb-6"
+              className="text-4xl md:text-5xl font-bold text-purple-400 mb-6"
             >
               WHAT WE ARE OFFERING
             </motion.h2>
