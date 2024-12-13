@@ -12,7 +12,9 @@ import { ResultsSection } from "../ResultsSection";
 import { PackagesSection } from "../PackagesSection";
 import { CTASection } from "../CTASection";
 import { ServicesSection } from "../ServicesSection";
+import { useNavigate } from "react-router-dom";
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <>
       {/* <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -113,6 +115,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-6 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors flex items-center space-x-2"
+                onClick={()=> navigate("/about")}
               >
                 <span>Why Choose Us?</span>
                 <ArrowUpRight className="w-5 h-5" />

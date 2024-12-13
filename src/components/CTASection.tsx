@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 export const CTASection = () => {
+  const navigate = useNavigate();
   return (
     <section className="bg-[#1C1C1C] py-32">
       <div className="container mx-auto px-4">
@@ -20,7 +22,7 @@ export const CTASection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 text-white font-medium hover:from-purple-600 hover:to-purple-700 transition-colors"
-          >
+            onClick={()=> navigate("/contact")}>
             GET IN TOUCH
           </motion.button>
         </motion.div>

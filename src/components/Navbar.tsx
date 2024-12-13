@@ -1,10 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const NavLink = ({
     href,
@@ -52,11 +53,11 @@ export default function Navbar() {
           <NavLink href="/services">Services</NavLink>
           <NavLink href="/contact">Contact Us</NavLink>
         </nav>
-        <button className="px-4 py-2 md:px-6 md:py-3 flex items-center justify-center rounded-full bg-black text-white group text-sm md:text-base">
-  <span className="phone-none">Get Quote</span>
-  <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-</button>
-
+        <button className="px-4 py-2 md:px-6 md:py-3 flex items-center justify-center rounded-full bg-black text-white group text-sm md:text-base"
+        onClick={()=> navigate("/contact")}>
+          <span className="phone-none">Get Quote</span>
+          <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+        </button>
       </div>
 
       <AnimatePresence>

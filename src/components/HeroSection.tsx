@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
 import { LogoMarquee } from './LogosMarquee'
+import { useNavigate } from 'react-router-dom'
 
 export const HeroSection = () => {
+  const navigate = useNavigate();
   // const companies = [
   //   [
   //     { name: 'Shakker', logo: '/logos/shakker.svg' },
@@ -35,7 +37,8 @@ export const HeroSection = () => {
           <p className="text-2xl text-gray-600 mb-5 font-dmSans">
             1 Step Away from Transforming Your Brand's Future.
           </p>
-          <button className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-900 transition-colors">
+          <button className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-900 transition-colors"
+          onClick={()=> navigate("/contact")}>
             Get in touch
           </button>
         </motion.div>
