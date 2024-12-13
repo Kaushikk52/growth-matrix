@@ -27,7 +27,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-5xl md:text-6xl font-semibold mb-6 font-poppins">
+          <h1 className="text-5xl md:text-6xl font-semibold mb-6 font-poppins mt-24">
             We Don't Just Market.
             <br />
             We Influence.
