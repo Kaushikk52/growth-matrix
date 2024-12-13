@@ -82,7 +82,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
               <li className="text-purple-200 flex">
-                <Mail className=" mr-2" /> partnership@growthmatrix.agency
+                <Mail className=" mr-2" /> <a href="mailto:partnership@growthmatrix.agency"> partnership@growthmatrix.agency</a>
               </li>
             </ul>
           </div>
