@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import {Linkedin, Edit,  Video, Instagram, Twitter, MessageCircle, Rocket, Users } from 'lucide-react';
+import {Linkedin, Edit,  Instagram, Twitter, Rocket, Users } from 'lucide-react';
 
 interface ServiceCardProps {
   icon: React.ReactNode
