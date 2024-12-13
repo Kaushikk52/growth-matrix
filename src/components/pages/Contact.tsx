@@ -33,7 +33,7 @@ const handleChange = (e:any) => {
         {/* Contact Form */}
         <div>
           <form className="space-y-6"
-           action="https://formsubmit.co/kaushikkarnik635@gmail.com"  method="POST">
+           action="https://formsubmit.co/partnership@growthmatrix.agency"  method="POST">
              <input
                 type="hidden"
                 name="_captcha"
@@ -130,7 +130,7 @@ const handleChange = (e:any) => {
               </a>
               <br />
               <a
-                href="mailto:partnership@growthmartix.agency"
+                href="mailto:partnership@growthmatrix.agency"
                 className="text-white hover:text-purple-400 transition-colors duration-200 mt-5"
               >
                 <Button className="w-7/12 justify-start">
