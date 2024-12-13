@@ -4,7 +4,7 @@ import { ArrowUp } from "lucide-react";
 const ImpressionCard = ({ count }: { count: string }) => (
   <div className="flex items-center gap-2 text-emerald-600 font-semibold">
     <ArrowUp className="w-4 h-4" />
-    <span className="text-2xl">{count} Impressions</span>
+    <span className="text-2xl font-dmSans">{count} Impressions</span>
   </div>
 );
 
@@ -20,7 +20,7 @@ export const ResultsSection = () => {
               transition={{ duration: 0.6 }}
               className="mb-16 relative top-1/3"
             >
-              <h2 className="text-5xl md:text-7xl font-bold">
+              <h2 className="text-5xl md:text-7xl font-bold font-poppins">
                 RESULTS
                 <br />
                 THAT SPEAK

@@ -68,7 +68,7 @@ export const Accordion = () => {
     <div className="bg-gradient-to-br from-purple-50 to-white p-8 md:p-12 rounded-2xl">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-2">
+          <h2 className="text-4xl md:text-5xl font-bold mb-2 font-poppins">
           Frequently asked questions
           </h2>
         </div>
@@ -83,7 +83,7 @@ export const Accordion = () => {
                 <div className="flex gap-6">
                   <span className="text-sm text-gray-800">{service.number}</span>
                   <div>
-                    <h3 className="text-xl font-semibold">{service.title}</h3>
+                    <h3 className="text-xl font-semibold font-poppins">{service.title}</h3>
                   </div>
                 </div>
                 <div className="ml-4">
@@ -109,7 +109,7 @@ export const Accordion = () => {
                   >
                     <div className="pb-6 flex gap-8">
                       <div className="flex-1">
-                        <p className="text-gray-900">{service.content}</p>
+                        <p className="text-gray-900 font-dmSans">{service.content}</p>
                       </div>
                     </div>
                   </motion.div>

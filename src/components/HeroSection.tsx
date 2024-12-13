@@ -27,12 +27,12 @@ export const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-5xl md:text-8xl font-bold mb-6">
+          <h1 className="text-5xl md:text-6xl font-semibold mb-6 font-poppins">
             We Don't Just Market.
             <br />
             We Influence.
           </h1>
-          <p className="text-2xl text-gray-600 mb-5">
+          <p className="text-2xl text-gray-600 mb-5 font-dmSans">
             1 Step Away from Transforming Your Brand's Future.
           </p>
           <button className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-900 transition-colors">
@@ -46,7 +46,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-16 text-center"
         >
-          <p className="text-lg text-gray-500 tracking-wider mb-20">
+          <p className="text-lg text-gray-500 tracking-wider mb-20 font-dmSans">
             We are behind some of the most fast-growing brands.
           </p>
 

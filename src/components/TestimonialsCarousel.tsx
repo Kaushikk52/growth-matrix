@@ -60,7 +60,7 @@ export const TestimonialCarousel: React.FC = () => {
           <SwiperSlide key={testimonial.id}>
             <div className="flex items-center justify-center px-4 md:px-20">
               <div className="max-w-4xl">
-                <blockquote className="text-xl md:text-3xl font-light mb-8 text-white">
+                <blockquote className="text-xl md:text-3xl font-light mb-8 text-white font-dmSans">
                   "{testimonial.quote}"
                 </blockquote>
                 <div className="flex items-center gap-4">

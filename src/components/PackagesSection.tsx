@@ -25,19 +25,19 @@ const PackageCard = ({
   >
     <div className="flex items-center gap-2 mb-6">
       <div className={`w-2 h-2 rounded-full ${dotColor}`} />
-      <span className="text-sm font-medium">{title}</span>
+      <span className="text-sm font-medium font-dmSans">{title}</span>
     </div>
 
     <div className="flex-1">
       <div className="mb-6">
         {heading.map((line, index) => (
-          <h3 key={index} className="text-4xl font-bold leading-tight">
+          <h3 key={index} className="text-4xl font-bold leading-tight font-poppins">
             {line}
           </h3>
         ))}
       </div>
 
-      <p className="text-sm mb-6 opacity-80">{description}</p>
+      <p className="text-sm mb-6 opacity-80 font-dmSans">{description}</p>
 
       {features && (
         <div className="space-y-2 mb-8">
@@ -65,7 +65,7 @@ export const PackagesSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-bold text-white text-center mb-12"
+            className="text-4xl md:text-5xl font-bold text-white text-center mb-12 font-poppins"
           >
             WHAT MATTERS THE MOST
           </motion.h2>

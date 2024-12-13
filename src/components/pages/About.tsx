@@ -20,10 +20,9 @@ export default function About() {
           </div> */}
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/3">
-              <h2 className="text-3xl font-semibold mb-4">
+              <h2 className="text-3xl font-semibold mb-4 font-poppins">
                 Get To Know Us
                 <br />
-                <span className="text-purple-800">GrowthMatrix</span>
               </h2>
               <button className="group inline-flex items-center space-x-2 text-white font-semibold bg-purple-800 p-2 rounded-lg">
                 <span>GET IN TOUCH</span>
@@ -31,8 +30,8 @@ export default function About() {
               </button>
             </div>
             <div className="md:w-2/3">
-              <h3 className="text-xl font-semibold mb-4">
-                Inspire. Influence. Achieve.
+              <h3 className="text-4xl font-semibold mb-4">
+                About Us
               </h3>
               <p className="mb-4">
                 At GrowthMatrix, we’re all about helping brands grow faster and

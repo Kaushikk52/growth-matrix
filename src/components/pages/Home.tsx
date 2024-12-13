@@ -90,7 +90,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold leading-tight font-poppins">
                 How We Help Brands Shine with
                 <br />
                 Influencer Marketing
@@ -102,7 +102,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="space-y-6"
             >
-              <p className="text-gray-600 text-lg">
+              <p className="text-gray-600 text-lg font-dmSans">
                 We team up with top-notch influencers and content creators to
                 craft standout campaigns that get people talking. From
                 eye-catching content to strategies that boost engagement, we
@@ -221,7 +221,7 @@ export default function Home() {
 
       <section className="py-5">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-5 text-center">Testimonials</h2>
+          <h2 className="text-4xl font-bold mb-5 text-center font-poppins">Testimonials</h2>
           <TestimonialCarousel />
         </div>
       </section>

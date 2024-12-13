@@ -27,8 +27,8 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => (
     </div>
 
     {/* Content */}
-    <h3 className="text-2xl font-semibold text-white mb-4">{title}</h3>
-    <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+    <h3 className="text-2xl font-semibold text-white mb-4 font-poppins">{title}</h3>
+    <p className="text-gray-400 mb-6 text-sm leading-relaxed font-dmSans">
       {description}
     </p>
 
@@ -93,7 +93,7 @@ export const ServicesSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-sm text-gray-400"
+              className="text-base text-gray-400 font-dmSans"
             >
               Our Services
             </motion.span>
@@ -101,7 +101,7 @@ export const ServicesSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl md:text-5xl font-bold text-purple-400 mb-6"
+              className="text-4xl md:text-5xl font-bold text-purple-400 mb-6 font-poppins"
             >
               WHAT WE ARE OFFERING
             </motion.h2>
@@ -109,7 +109,7 @@ export const ServicesSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-gray-400 max-w-3xl mx-auto leading-relaxed"
+              className="text-gray-400 max-w-3xl mx-auto leading-relaxed font-dmSans"
             >
               At GrowthMatrix, we understand how challenging it can be to manage marketing campaigns while growing your brand. That's why we offer stress-free solutions with tailored influencer marketing strategies. Let us take your brand to new heights while you focus on what matters most
             </motion.p>

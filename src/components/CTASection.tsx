@@ -10,10 +10,10 @@ export const CTASection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-4">
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-4 font-poppins">
           REACH OUT NOW
           </h2>
-          <p className="text-gray-400 text-lg mb-8">
+          <p className="text-gray-400 text-xl mb-8 font-dmSans">
             Start growing now. Book a call!
           </p>
           <motion.button
