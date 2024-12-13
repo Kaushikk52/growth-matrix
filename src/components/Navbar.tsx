@@ -30,16 +30,22 @@ export default function Navbar() {
   return (
     <>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center bg-transparent">
-      <button
-            className="text-gray-600 hover:text-gray-800 md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle mobile menu"
+        <button
+          className="text-gray-600 hover:text-gray-800 md:hidden"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle mobile menu"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+        <div className="text-xl font-semibold text-gray-800 flex items-center">
+          <img src="/logo.jpg" height={50} width={50} />
+          <a
+            className="text-2xl font-bold leading-none text-purple-600"
+            href="/"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        <a className="text-2xl font-bold leading-none text-purple-600" href="/">
-          GrowthMatrix
-        </a>
+            GrowthMatrix
+          </a>
+        </div>
         <nav className="hidden md:flex space-x-8">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
@@ -47,8 +53,8 @@ export default function Navbar() {
           <NavLink href="/contact">Contact Us</NavLink>
         </nav>
         <button className="px-4 py-2 flex items-center justify-center rounded-full bg-black text-white group">
-        <span>Get Quote</span>
-        <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+          <span>Get Quote</span>
+          <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
         </button>
       </div>
 
@@ -63,12 +69,15 @@ export default function Navbar() {
             className="fixed inset-0 bg-white z-50 overflow-y-auto"
           >
             <div className="flex justify-between items-center p-4 border-b">
-              <a
-                className="text-2xl font-bold leading-none text-purple-600"
-                href="/"
-              >
-                GrowthMatrix
-              </a>
+              <div className="text-xl font-semibold text-gray-800 flex items-center">
+                <img src="/logo.jpg" height={50} width={50} />
+                <a
+                  className="text-2xl font-bold leading-none text-purple-600"
+                  href="/"
+                >
+                  GrowthMatrix
+                </a>
+              </div>
               <button
                 onClick={() => setIsMenuOpen(false)}
                 className="text-gray-600 hover:text-gray-800"

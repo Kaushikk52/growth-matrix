@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
-import {Linkedin, Edit,  Video, Instagram, Twitter } from 'lucide-react'
+import { motion } from 'framer-motion';
+import {Linkedin, Edit,  Video, Instagram, Twitter, MessageCircle, Rocket, Users } from 'lucide-react';
 
 interface ServiceCardProps {
   icon: React.ReactNode
@@ -33,20 +33,15 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => (
     </p>
 
     {/* Button */}
-    <button className="flex items-center gap-2 text-purple-400 text-sm font-medium group/btn">
+    {/* <button className="flex items-center gap-2 text-purple-400 text-sm font-medium group/btn">
       <span>See More</span>
       <div className="w-12 h-[1px] bg-purple-400 transform origin-left group-hover/btn:scale-x-150 transition-transform" />
-    </button>
+    </button> */}
   </motion.div>
 )
 
 export const ServicesSection = () => {
   const services = [
-    {
-      icon: <Video className="w-6 h-6" />,
-      title: "YouTube Influencer Campaigns",
-      description: "Engage your audience with high-quality YouTube content. From integrated brand mentions to dedicated videos and YouTube shorts, we connect you with top-tier creators who bring your brand to life."
-    },
     {
       icon: <Linkedin className="w-6 h-6" />,
       title: "LinkedIn Infulencer Partnerships",
@@ -55,17 +50,17 @@ export const ServicesSection = () => {
     {
       icon: <Twitter className="w-6 h-6" />,
       title: "X Influencer Promotions",
-      description: "Make your brand trend on Twitter with powerful influencer collaborations. From AI and Tech to lifestyle niches, we craft campaigns that resonates with the right audience."
+      description: "Want to go viral on X (formerly Twitter)? We create buzzworthy campaigns with influencers that get people talking whether it’s trending hashtags, creative posts, or meaningful conversations with the right audience."
     },
     {
       icon: <Instagram className="w-6 h-6" />,
-      title: "Instagram Influencer Engagements",
-      description: "Create stunning campaigns that captivate your audience on Instagram. From product launches to lifestyle promotions, we help you reach millions with authentic influencer partnerships."
+      title: "Instagram Influencer  Partnerships",
+      description: "Instagram’s the perfect place to show off your brand, especially with AI influencers. We’ll connect you with creators who know how to engage their followers, hype your product, and make your brand stand out. Whether it’s a product launch or something fresh, we’ll help keep your audience hooked."
     },
     {
       icon: <Edit className="w-6 h-6" />,
       title: "Newsletter Marketing with Influencers",
-      description: "Get your brand directly into inboxes with influencer-driven email campaigns. Drive traffic to your website, build trust, and deliver value through engaging newsletters."
+      description: "Be the brand that shows up in inboxes and gets noticed. We’ll help you team up with influencers to create newsletters that drive clicks, build trust, and keep your audience excited to hear from you."
     },
     // {
     //   icon: <Video className="w-6 h-6" />,
@@ -77,11 +72,16 @@ export const ServicesSection = () => {
     //   title: "Web Design & Development",
     //   description: "Want a website that drives real results? Our web designing & development service converts visitors into clients with high-performing solutions."
     // },
-    // {
-    //   icon: <MessageCircle className="w-6 h-6" />,
-    //   title: "Consultation with Mahnoor",
-    //   description: "Need clarity? Book a call and get personalized advice to tackle your challenges and reach your goals."
-    // }
+    {
+      icon: <Rocket className="w-6 h-6" />,
+      title: "Product Hunt Campaigns",
+      description: "Ready to launch on Product Hunt? We’ll help you get your product in front of the right people. From creating an eye-catching post to connecting with early supporters and influencers, we make sure your launch gets the attention it deserves and climbs the charts."
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      title: " LinkedIn and X Engagement Campaigns ",
+      description: "Supercharge your LinkedIn and X posts with real engagement. We partner with influencers to boost your content through reposts, quotes, meaningful comments, and authentic interactions—helping your brand reach the right audience and spark conversations that matter"
+    }
   ]
 
   return (

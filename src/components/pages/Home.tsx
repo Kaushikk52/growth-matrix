@@ -91,9 +91,9 @@ export default function Home() {
               className="space-y-6"
             >
               <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                How Our Influencer Marketing Company
+                How We Help Brands Shine with
                 <br />
-                Helps Brands?
+                Influencer Marketing
               </h2>
             </motion.div>
             <motion.div
@@ -103,19 +103,18 @@ export default function Home() {
               className="space-y-6"
             >
               <p className="text-gray-600 text-lg">
-                Leveraging the talents of professional social media influencers
-                and content creators, our influencer marketing experts
-                collaborate with visionary strategists to develop imaginative,
-                distinctive content that boasts exceptional shareability and
-                engagement.Opt for the best influencer marketing services to
-                elevate your brand's presence!
+                We team up with top-notch influencers and content creators to
+                craft standout campaigns that get people talking. From
+                eye-catching content to strategies that boost engagement, we
+                make sure your brand gets the attention it deserves. Ready to
+                elevate your game? Let’s make it happen!
               </p>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-6 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors flex items-center space-x-2"
               >
-                <span>About us</span>
+                <span>Why Choose Us?</span>
                 <ArrowUpRight className="w-5 h-5" />
               </motion.button>
             </motion.div>
@@ -210,7 +209,7 @@ export default function Home() {
         </div>
       </section> */}
 
-<PackagesSection />
+      <PackagesSection />
 
       <ResultsSection />
 
@@ -250,8 +249,7 @@ export default function Home() {
         </div>
       </section> */}
 
-
-<CTASection />
+      <CTASection />
     </>
   );
 }

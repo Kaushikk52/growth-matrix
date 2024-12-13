@@ -1,19 +1,25 @@
 import { Linkedin, Mail, Twitter } from "lucide-react";
 import { useState } from "react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "../ui/select";
 import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
-  const [countryCode, setCountryCode] = useState("US");
+  const navigate = useNavigate();
+
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    message: "",
+});
+
+const handleChange = (e:any) => {
+  const { name, value } = e.target;
+  setFormData({ ...formData, [name]: value });
+};
   return (
     <div className="max-w-6xl mx-auto px-4 py-20">
       <div className="text-center mb-12">
@@ -26,24 +32,48 @@ export default function Contact() {
       <div className="grid md:grid-cols-2 gap-12">
         {/* Contact Form */}
         <div>
-          <form className="space-y-6">
+          <form className="space-y-6"
+           action="https://formsubmit.co/kaushikkarnik635@gmail.com"  method="POST">
+             <input
+                type="hidden"
+                name="_captcha"
+                value="false" // Disables FormSubmit's captcha
+            />
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="firstName">First name</Label>
-                <Input id="firstName" placeholder="First name" />
+                <Input type="text"
+                    name="firstname"
+                    value={formData.firstname}
+                    onChange={handleChange}
+                    required
+                    placeholder="First name" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="lastName">Last name</Label>
-                <Input id="lastName" placeholder="Last name" />
+                
+                <Input type="text"
+                    name="lastname"
+                    value={formData.lastname}
+                    onChange={handleChange}
+                    required
+                    placeholder="Last name" />
               </div>
             </div>
 
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" placeholder="you@company.com" />
+              <Input 
+              id="email" 
+              name="email" 
+              type="email" 
+              value={formData.email}
+              onChange={handleChange}
+              required
+              placeholder="you@company.com" />
             </div>
 
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <Label htmlFor="phone">Phone number</Label>
               <div className="flex gap-2">
                 <Select value={countryCode} onValueChange={setCountryCode}>
@@ -64,13 +94,17 @@ export default function Contact() {
                   className="flex-1"
                 />
               </div>
-            </div>
+            </div> */}
 
             <div className="space-y-2">
               <Label htmlFor="message">Message</Label>
               <Textarea
                 id="message"
+                name="message"
                 placeholder="Leave us a message..."
+                value={formData.message}
+                onChange={handleChange}
+                required
                 className="min-h-[150px]"
               />
             </div>
@@ -81,32 +115,41 @@ export default function Contact() {
 
         {/* Contact Information */}
         <div className="space-y-12">
-         
           {/* Chat with us */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Chat with us</h3>
-            <p className="text-gray-600 mb-4">
-              Speak to our friendly team via live chat.
-            </p>
             <div className="space-y-3">
-              <Button className="w-7/12 justify-start">
-                <Linkedin className="w-4 h-4 mr-2" />
-                Connect on Linkedin
-              </Button>
+              <a
+                href="https://www.linkedin.com/company/growthmatrixagency"
+                className="text-white hover:text-purple-400 transition-colors duration-200"
+              >
+                <Button className="w-7/12 justify-start">
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  Connect on Linkedin
+                </Button>
+              </a>
               <br />
-              <Button className="w-7/12 justify-start">
-                <Mail className="w-4 h-4 mr-2" />
-                Shoot us an email
-              </Button>
+              <a
+                href="mailto:partnership@growthmartix.agency"
+                className="text-white hover:text-purple-400 transition-colors duration-200 mt-5"
+              >
+                <Button className="w-7/12 justify-start">
+                  <Mail className="w-4 h-4 mr-2" />
+                  Shoot us an email
+                </Button>
+              </a>
               <br />
-              <Button className="w-7/12 justify-start">
-                <Twitter className="w-4 h-4 mr-2" />
-                Message us on Twitter
-              </Button>
+              <a
+                href="https://x.com/growthmatrixx"
+                className="text-white hover:text-purple-400 transition-colors duration-200 mt-5"
+              >
+                <Button className="w-7/12 justify-start" onClick={() => navigate("/")}>
+                  <Twitter className="w-4 h-4 mr-2" />
+                  Message us on Twitter
+                </Button>
+              </a>
             </div>
           </div>
-
-          
         </div>
       </div>
     </div>
