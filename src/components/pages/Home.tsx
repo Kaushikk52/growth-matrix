@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 // import { ServiceCard } from "../ServiceCard";
-// import { AnimatedWords } from "../AnimatedWords";
+import { AnimatedWords } from "../AnimatedWords";
 // import { LogoMarquee } from "../LogosMarquee";
-// import { Stats } from "../Stats";
+import { Stats } from "../Stats";
 import { TestimonialCarousel } from "../TestimonialsCarousel";
 import { Accordion } from "../Accordion";
-import { HeroSection } from "../HeroSection";
+// import { HeroSection } from "../HeroSection";
 import { ResultsSection } from "../ResultsSection";
-// import { OfferingSection } from "../OfferingSection";
+import { OfferingSection } from "../OfferingSection";
 import { PackagesSection } from "../PackagesSection";
 import { CTASection } from "../CTASection";
 import { ServicesSection } from "../ServicesSection";
@@ -17,7 +17,7 @@ export default function Home() {
   const navigate = useNavigate();
   return (
     <>
-      {/* <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-[url(/glitch-bg.png)] bg-no-repeat bg-cover opacity-50 mix-blend-overlay" />
         <div className="container mx-auto px-4 relative z-10">
           <Stats />
@@ -45,11 +45,11 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      <div className="min-h-screen bg-white">
+      {/* <div className="min-h-screen bg-white">
         <HeroSection />
-      </div>
+      </div> */}
 
       {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -166,7 +166,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      {/* <OfferingSection /> */}
+      <OfferingSection />
 
       <ServicesSection />
 
@@ -212,9 +212,9 @@ export default function Home() {
         </div>
       </section> */}
 
-      <PackagesSection />
+      {/* <PackagesSection /> */}
 
-      <ResultsSection />
+      {/* <ResultsSection /> */}
 
       <section className="py-5">
         <div className="container mx-auto ">
@@ -222,12 +222,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold mb-5 text-center font-poppins">Testimonials</h2>
           <TestimonialCarousel />
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="py-20 bg-[url(/blade-1-opacity85.png)] bg-bottom">
         <div className="container mx-auto px-4 text-center">
